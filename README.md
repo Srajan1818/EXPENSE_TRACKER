@@ -50,4 +50,6 @@ This project was created to strengthen the following concepts:
 
 👉 **[Click here to view the app](https://your-username.github.io/expense-tracker/)**
 
+---)**
+
 ---
