@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+            background-color: grey;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: rgb(114, 87, 87);
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        #expense-name {
+            padding: 5px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        
+        }
+        #expense-amount {
+            padding: 5px;
+            border-radius: 3px;
+        }
+        button {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: grey;
+            color: white;
+        }
+        button:hover {
+            color:rgb(131, 105, 105);
+        }
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        h3{
+            color: white;
+            text-align: center;
+        }
+        #expense-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(131, 105, 105);
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+#expense-list li span {
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="expense-name" required />
+            <input type="number" id="expense-amount" placeholder="Amount" required />
+            <button type="submit">Add Expense</button>
+        </form>
+        <h2>Expenses</h2>
+        <ul id="expense-list">
+            <!--Expenses will be dynamically added here-->
+        </ul>
+        <div id="total">
+            <h3>Total:$<span id="total-amount">0.00</span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
